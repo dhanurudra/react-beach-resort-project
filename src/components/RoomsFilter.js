@@ -4,7 +4,7 @@ import { RoomContext } from "../context";
 import Title from "./Title";
 // get all unique values
 const getUnique = (items, value) => {
-  return [...new Set(items.map(item => item[value]))];
+  return [...new Set(items.map((item) => item[value]))];
 };
 
 const RoomsFilter = ({ rooms }) => {
@@ -20,7 +20,7 @@ const RoomsFilter = ({ rooms }) => {
     minSize,
     maxSize,
     breakfast,
-    pets
+    pets,
   } = context;
 
   // get unique types
